@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>利用HTML5实现全排列动态演示</title>
+<link href="mystyle.css" rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body>
+<div id="Container">
+    <div id="Header">
+        <div id="logo">
+            <center>
+                <div style="background-image:url(图片2.jpg);
+                 background-size:cover;
+                 background-position:center;
+                 background-repeat:no-repeat;">   
+            <font size="30" color="#000000" face="Lucida Sans Unicode, Lucida Grande, sans-serif">利用HTML5实现全排列动态演示</font> 
+            </center>
+        </div>
+    <div id="Content">
+      <div id="Content-Head">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type=button onclick="window.open('index2.html')"
+        style="background:#999999;font-size:20px;color:#FFFFFF" value="两个数字全排列"> 
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <input type=button onclick="window.open('index3.html')"
+        style="background:#999999;font-size:20px;color:#FFFFFF" value="三个数字全排列"> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <input type=button onclick="window.open('index4.html')"
+        style="background:#999999;font-size:20px;color:#FFFFFF" value="四个数字全排列"> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+       <div id="Content-Left"><img src="图片1.jpg" width="500" height="500" />
+</div> 
+        <div id="Content-Main">
+       <p><font size="5"><strong> 方法1：（交换）递归</strong></font></p>
+<p>大致思路：</p> 
+<p>1、将每个元素按顺序先放到每个位置</p>
+<p>2、选择某个位置的元素和第一个位置元素交换</p>
+<p>3、固定第一个位置，递归的处理之后的所有位置</p>
+<p>4、递归出口为只剩下最后一个位置</p>
+<p></p>
+<p><font size="5"><strong>方法2：类似八皇后的递归回递归溯算法递归</strong></font></p>
+<p>大致思路： </p>
+<p>1、为第一个位置选择某个元素放置，并标记此元素</p>
+<p>2、为第二个位置选择某个元素放置（不与之前已放置的元素重复），并标记此元素</p>
+<p>3、依次类推，递归出口为最后一个位置被放置</p>
+    </div>
+    <div class="Clear"></div>
+    <div id="Footer">Designed by Wang Linlan</div>
+</div>
+</body>
+</html>

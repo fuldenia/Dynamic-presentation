@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+#Container{
+    width:1400px;
+    margin:0 auto;
+    background:#A9A9A9;
+}
+#Header{
+    height:120px;
+    background:#696969;
+}
+#logo{
+    margin:0 auto;
+    padding-left:0px;
+    padding-top:0px;
+    padding-bottom:0px;
+}
+#Content{
+    height:600px;
+    background:#A9A9A9;
+     
+}
+#Content-Head{
+    height:37px;
+    background:#DCDCDC;
+}
+#Content-Left{
+    height:500px;
+    width:500px;
+    margin:21px;
+    float:left;
+    background:#000035;
+}
+#Content-Main{
+    height:500px;
+    width:800px;
+    margin:21px;
+    float:left;
+    background:#DCDCDC;
+}
+#Footer{
+    height:40px;
+    background:#DCDCDC;
+}
+.Clear{
+    clear:both;
+}
